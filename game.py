@@ -2,11 +2,10 @@ import pygame
 import random
 import math
 
-# this is game.py file
 
 pygame.init()
 
-screen = pygame.display.set_mode((700, 500)) # (width, height)
+screen = pygame.display.set_mode((700, 500)) 
 pygame.display.set_caption('Cookie Monster: catch all the cookies!')
 icon = pygame.image.load('monster.png')
 pygame.display.set_icon(icon)
@@ -42,7 +41,7 @@ def is_cookie_eaten(mX, mY, cX, cY):
         return True
 
 while True:
-    screen.fill((0, 0, 0)) # RGB - red green blue
+    screen.fill((0, 0, 0)) 
     screen.blit(background, (0,0))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -60,10 +59,7 @@ while True:
             if event.key == pygame.K_DOWN:
                 monsterX_change = 0
                 monsterY_change = 0.5
-        # if event.type == pygame.KEYUP:
-        #     monsterX_change = 0
-        #     monsterY_change = 0
-
+       
     monsterX += monsterX_change
     monsterY += monsterY_change
     

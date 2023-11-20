@@ -2,7 +2,7 @@ import pygame
 import random
 import math
 
-# this is main.py file
+
 
 pygame.init()
 
