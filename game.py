@@ -2,6 +2,8 @@ import pygame
 import random
 import math
 
+# this is game.py file
+
 pygame.init()
 
 screen = pygame.display.set_mode((700, 500)) # (width, height)
